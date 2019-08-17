@@ -38,7 +38,7 @@ For instance, our server will be able to either answer in JSON or in XML:
     >>> def json_v1_search(search_result):
     ...     return make_response(jsonify(search_result))
     >>> def xml_v1_search(search_result):
-    ...     return make_response(xmltodict.unparse((search_result,)))
+    ...     return make_response(xmltodict.unparse(search_result))
 
 Views
 -----
